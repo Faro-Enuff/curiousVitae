@@ -1,0 +1,23 @@
+/* Homepage*/
+
+.text_container {
+    margin-inline-end: 175px;
+    margin-inline-start: 0px;
+    grid-column: 2;
+
+}
+
+.text_style {
+    font-size: 20pt;
+    text-align: justify;
+}
+
+hr {
+    height: 1px;
+    color: rgb(62, 165, 165);
+    background-color: rgb(62, 165, 165);
+    width: 800px;
+    margin-inline-end: 175px;
+    margin-inline-start: 0px;
+    grid-column: 2;
+}

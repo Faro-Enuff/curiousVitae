@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>curiousVitae</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="register.css">
+  </head>
+  <body>
+    <div class = "grid_container">
+      
+        <div class="navbar">
+          <span>
+            <a href="index.html">Home</a>
+          </span>
+  
+          <span>
+            <a href="content.html">Evaluation Process</a>
+          </span>
+  
+          <span>
+            <a class="active" href="register.html">Register</a>
+          </span>
+  
+          <span>
+            <a href="contact.html">Contact</a>
+          </span>
+          
+          
+        </div>
+
+        <div class="logo_container">
+        
+            <div class="logo_style">
+              <img class="logo_style" src="/img/logocv.png" alt="LogoCV" >
+            </div>
+            
+        </div>
+
+        <div class="title_container">
+            <h1>
+              <span>R</span>egister
+            </h1>
+        </div>
+
+        <div class="text_container">
+          <div class="text_style">              
+              <p><hr></p>
+          </div>
+      </div>
+          
+        <div class="text_container">
+          <div class="text_style">
+              <p> <b><br> Please <span>enter</span> your <span>data</span> to improve our product: </b> <br> <br> </p>
+          </div>
+       </div>
+         
+        <div class="register_container">
+            
+
+            <label for="email"><b>E-mail</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>           
+            <br>
+            <label for="firstName"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="fname" id="fname" 
+            required>
+            <br>
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="lname" id="lname" 
+            required>
+            <br>
+            <label for="birthDay"><b>Birthday</b></label>
+            <input type="date" name="bday" id="bday" 
+            required>
+
+            <br>
+
+            <div class="radio_container">
+
+            </div>
+            <label for="gender"><b>Gender</b></label><br><hr>
+            <label class="radio_container">Female<input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+            </label><br>
+            <label class="radio_container">Male<input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+            </label><br>
+            <label class="radio_container">Diverse<input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            
+            <br>
+
+
+            <label for="hobbies"><b>Choose a hobby area you are interested in:</b></label>
+
+            <hr>
+            
+            <div class="select_container">
+              <select name="hobby" id="hobby">
+                <option value="Music">Music</option>
+                <option value="Art">Art</option>
+                <option value="Sports">Sports</option>
+                <option value="Cooking">Cooking</option>
+                <option value=""></option>
+              </select>
+            </div>
+            
+
+
+            <br>
+
+            <p>
+              
+            </p>
+            <label for="hobbyStatus"><b>Current Hobby Status</b></label>
+
+            <hr>
+
+            <p>
+              <input type="checkbox" id="vehicle1"/>
+              <label for="vehicle1">Beginner</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="vehicle2"/>
+              <label for="vehicle2">Intermediate</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="vehicle3"/>
+              <label for="vehicle3">Advanced</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="vehicle4"/>
+              <label for="vehicle4">Professional</label>
+            </p>
+
+            <hr>
+
+            <p>By submitting your data you agree to our <br><a href="tandc.html" target="_blank">Terms & Privacy</a>.</p>
+            
+            <button type= "submit" class="registerbtn">Submit</button>
+
+        </div>
+  
+    </div>
+    
+    <p><br><br><br></p>
+
+  </body>
+</html>

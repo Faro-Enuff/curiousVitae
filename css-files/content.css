@@ -1,0 +1,47 @@
+.table_container {
+    grid-row-start: 4;
+    grid-column: 2;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 1cm;
+}
+
+.table_head {
+    text-align: left;
+    font-size: 25pt;
+    color: white;
+}
+
+th {
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: left;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+    background-color: rgb(62, 165, 165);
+
+}
+
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: left;
+    font-size: 55;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+}
+
+
+.text_container {
+    margin-inline-end: 175px;
+    text-align: left;
+    padding: 0px;
+    grid-row: 3;
+    grid-column: 2;
+}

@@ -1,0 +1,200 @@
+/*Registration Page */
+
+.register_container {
+    margin-inline-end: 700px;
+    text-align: left;
+    grid-row: 4;
+    grid-column: 2;
+    font-size: 25pt;
+}
+
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 1%;
+    margin: 10px 1500px 20px 0px;
+    border-radius: 30px;
+    border-color: rgb(62, 165, 165);
+    font-size: 20pt;
+    margin-inline-end: 500px;
+}
+
+.registerbtn {
+    background-color: rgb(62, 165, 165);
+    color: white;
+    padding: 16px 20px;
+    border: solid black;
+    border-width: 0.5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 4px 0;
+    border-radius: 30px;
+    font-size: 20pt;
+
+}
+
+
+
+.text_container {
+    margin-inline-end: 175px;
+    text-align: left;
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 25pt;
+}
+
+.select_container {
+
+    position: relative;
+    display: block;
+    max-width: 300px;
+    min-width: 280px;
+    margin: 0 auto;
+    border: 2px solid rgb(62, 165, 165);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: white;
+    z-index: 10;
+    margin: 0;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    font-size: 18pt;
+    color: black;
+    margin-left: 1cm;
+}
+
+/* CHECKBOX */
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.8cm;
+    padding-top: 0.2cm;
+    font-size: 20pt;
+    line-height: 2;
+    cursor: pointer;
+}
+
+/* Checkbox aspect */
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.2cm;
+    height: 1.2cm;
+    border: 1px solid black;
+    background: rgb(62, 165, 165);
+    border-radius: 0.2cm;
+}
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: 'c';
+    position: absolute;
+    top: 0.525cm;
+    left: 0.18cm;
+    font-size: 40pt;
+    color: rgb(241, 243, 243);
+    line-height: 0;
+    -webkit-transition: all 0.2s;
+    transition: 0.2s;
+}
+
+/* checked mark aspect changes */
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(45deg);
+    transform: scale(0) rotate(45deg);
+}
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+/*RADIO BUTTON*/
+/*The container*/
+.radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20pt;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button*/
+.radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio_container:hover input~.checkmark {
+    background-color: rgb(139, 138, 138);
+}
+
+/* When the radio button is checked, add a blue background */
+.radio_container input:checked~.checkmark {
+    background-color: rgb(62, 165, 165);
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio_container input:checked~.checkmark:after {
+    display: block;
+}
+
+/*Style the indicator (dot/circle) */
+.radio_container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
