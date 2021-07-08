@@ -25,17 +25,11 @@
   
           <span>
             <a href="contact.html">Contact</a>
-          </span>
-          
-          
+          </span>  
         </div>
 
-        <div class="logo_container">
-        
-            <div class="logo_style">
-              <img class="logo_style" src="/img/logocv.png" alt="LogoCV" >
-            </div>
-            
+        <div class="logo_container logo_style">
+              <img class="logo_style" src="/img/logocv.png" alt="LogoCV" >            
         </div>
 
         <div class="title_container">
@@ -44,105 +38,103 @@
             </h1>
         </div>
 
-        <div class="text_container">
-          <div class="text_style">              
+        <div class="text_container text_style">             
               <p><hr></p>
-          </div>
       </div>
           
-        <div class="text_container">
-          <div class="text_style">
+        <div class="text_container text_style">
               <p> <b><br> Please <span>enter</span> your <span>data</span> to improve our product: </b> <br> <br> </p>
-          </div>
        </div>
          
         <div class="register_container">
-            
+          <form action="confirmation.html" method="GET" target="_blank">   
 
-            <label for="email"><b>E-mail</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>           
-            <br>
-            <label for="firstName"><b>First Name</b></label>
-            <input type="text" placeholder="Enter First Name" name="fname" id="fname" 
-            required>
-            <br>
-            <label for="lastName"><b>Last Name</b></label>
-            <input type="text" placeholder="Enter Last Name" name="lname" id="lname" 
-            required>
-            <br>
-            <label for="birthDay"><b>Birthday</b></label>
-            <input type="date" name="bday" id="bday" 
-            required>
+              <label for="email"><b>E-mail</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>           
+              <br>
+              <label for="firstName"><b>First Name</b></label>
+              <input type="text" placeholder="Enter First Name" name="fname" id="fname" 
+              required>
+              <br>
+              <label for="lastName"><b>Last Name</b></label>
+              <input type="text" placeholder="Enter Last Name" name="lname" id="lname" 
+              required>
+              <br>
+              <label for="birthDay"><b>Birthday</b></label>
+              <input type="date" name="bday" id="bday" 
+              required>
 
-            <br>
+              <br>
 
-            <div class="radio_container">
+              <div class="radio_container">
 
-            </div>
-            <label for="gender"><b>Gender</b></label><br><hr>
-            <label class="radio_container">Female<input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-            </label><br>
-            <label class="radio_container">Male<input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-            </label><br>
-            <label class="radio_container">Diverse<input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-            </label>
-            
-            <br>
-
-
-            <label for="hobbies"><b>Choose a hobby area you are interested in:</b></label>
-
-            <hr>
-            
-            <div class="select_container">
-              <select name="hobby" id="hobby">
-                <option value="Music">Music</option>
-                <option value="Art">Art</option>
-                <option value="Sports">Sports</option>
-                <option value="Cooking">Cooking</option>
-                <option value=""></option>
-              </select>
-            </div>
-            
-
-
-            <br>
-
-            <p>
+              </div>
+              <label for="gender"><b>Gender</b></label><br><hr>
+              <label class="radio_container">Female<input type="radio" checked="checked" name="gender" value="Female">
+              <span class="checkmark"></span>
+              </label><br>
+              <label class="radio_container">Male<input type="radio" checked="checked" name="gender" value="Male">
+              <span class="checkmark"></span>
+              </label><br>
+              <label class="radio_container">Diverse<input type="radio" checked="checked" name="gender" value="Diverse">
+              <span class="checkmark"></span>
+              </label>
               
-            </p>
-            <label for="hobbyStatus"><b>Current Hobby Status</b></label>
+              <br>
 
-            <hr>
 
-            <p>
-              <input type="checkbox" id="vehicle1"/>
-              <label for="vehicle1">Beginner</label>
-            </p>
+              <label for="hobbies"><b>Choose a hobby area you are interested in:</b></label>
 
-            <p>
-              <input type="checkbox" id="vehicle2"/>
-              <label for="vehicle2">Intermediate</label>
-            </p>
+              <hr>
+              
+              <div class="select_container">
+                <select name="hobby" id="hobby">
+                  <option value="Music">Music</option>
+                  <option value="Art">Art</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Cooking">Cooking</option>
+                  <option value=""></option>
+                </select>
+              </div>
+              
 
-            <p>
-              <input type="checkbox" id="vehicle3"/>
-              <label for="vehicle3">Advanced</label>
-            </p>
 
-            <p>
-              <input type="checkbox" id="vehicle4"/>
-              <label for="vehicle4">Professional</label>
-            </p>
+              <br>
 
-            <hr>
+              <p>
+                
+              </p>
+              <label for="hobbyStatus"><b>Current Hobby Status</b></label>
 
-            <p>By submitting your data you agree to our <br><a href="tandc.html" target="_blank">Terms & Privacy</a>.</p>
-            
-            <button type= "submit" class="registerbtn">Submit</button>
+              <hr>
+
+              <p>
+                <input type="checkbox" id="vehicle1" name="level" value="Beginner" />
+                <label for="vehicle1">Beginner</label>
+              </p>
+
+              <p>
+                <input type="checkbox" id="vehicle2" name="level" value="Intermediate" />
+                <label for="vehicle2">Intermediate</label>
+              </p>
+
+              <p>
+                <input type="checkbox" id="vehicle3" name="level" value="Advanced" />
+                <label for="vehicle3">Advanced</label>
+              </p>
+
+              <p>
+                <input type="checkbox" id="vehicle4" name="level" value="Professional" />
+                <label for="vehicle4">Professional</label>
+              </p>
+
+              <hr>
+
+              <p>By submitting your data you agree to our <br><a href="tandc.html" target="_blank">Terms & Privacy</a>.</p>
+              
+              <button type= "submit" class="registerbtn">Submit</button>
+
+          </form>
 
         </div>
   
